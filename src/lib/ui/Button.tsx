@@ -7,6 +7,7 @@ interface BtnProps {
   width?: string | number;
   height?: string | number;
   hoverBg?: string;
+  leftIcon?: React.ReactNode;
 }
 
 const Btn = ({

@@ -1,4 +1,4 @@
-import { Box, Card, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Card, Container, Text } from "@chakra-ui/react";
 import Btn from "../ui/Button";
 
 const Hero = () => {

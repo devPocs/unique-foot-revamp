@@ -2,7 +2,6 @@
 
 import {
   Flex,
-  Box,
   IconButton,
   Link,
   Drawer,
@@ -13,12 +12,11 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerOverlay,
-  Grid,
   HStack,
 } from "@chakra-ui/react";
 import SearchBar from "../ui/SearchBar";
 import Image from "next/image";
-import { HamburgerIcon, ShoppingBagIcon } from "@/lib/ui/icons";
+import { HamburgerIcon } from "@/lib/ui/icons";
 import Btn from "@/lib/ui/Button";
 import CartObject from "../ui/CartObject";
 

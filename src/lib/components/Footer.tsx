@@ -1,4 +1,4 @@
-import { Box, Grid, Flex, Link, Text, Stack } from "@chakra-ui/react";
+import { Box, Grid, Flex, Text, Stack } from "@chakra-ui/react";
 import NavItem from "@/lib/ui/NavItem";
 import { PhoneIcon, EmailIcon } from "@/lib/ui/icons";
 

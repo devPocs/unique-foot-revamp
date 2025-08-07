@@ -1,11 +1,13 @@
 "use client";
 
-import { Box, Flex, Grid } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Hero from "@/lib/components/Hero";
+import FeaturedProducts from "../components/FeaturedProducts";
 export default function Home() {
   return (
     <Flex px={4} flexDirection="column">
       <Hero />
+      <FeaturedProducts />
     </Flex>
   );
 }
