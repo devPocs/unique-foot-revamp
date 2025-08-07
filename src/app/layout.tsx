@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Inter } from "next/font/google";
 import Providers from "./providers";
 import Nav from "@/lib/components/Nav";
 import Footer from "@/lib/components/Footer";
 
 import { Container } from "@chakra-ui/react";
 
-const lato = Lato({
-  variable: "--font-lato",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
 });
-
 export const metadata: Metadata = {
   title: "Unique Foot",
   description:
@@ -24,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${lato.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
       <body>
         <Providers>
           <Container
