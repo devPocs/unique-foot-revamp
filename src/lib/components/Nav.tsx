@@ -2,7 +2,6 @@
 
 import {
   Flex,
-  Box,
   IconButton,
   Link,
   Drawer,
@@ -13,12 +12,11 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerOverlay,
-  Grid,
   HStack,
 } from "@chakra-ui/react";
 import SearchBar from "../ui/SearchBar";
 import Image from "next/image";
-import { HamburgerIcon, ShoppingBagIcon } from "@/lib/ui/icons";
+import { HamburgerIcon } from "@/lib/ui/icons";
 import Btn from "@/lib/ui/Button";
 import CartObject from "../ui/CartObject";
 
@@ -45,7 +43,7 @@ const Nav = () => {
           >
             <HamburgerIcon />
           </IconButton>
-          <Image src="/images/unique1.svg" alt=" logo" width={50} height={50} />
+          <Image src="/images/unique1.svg" alt=" logo" width={60} height={60} />
         </HStack>
         {/* Desktop links */}
         <Flex
@@ -60,7 +58,7 @@ const Nav = () => {
         </Flex>
         <Flex gap={8} align="center" px={8}>
           <CartObject />
-          <Btn bgColor="brand.600" textColor="primary.50" text="Login" />
+          <Btn bgColor="brand.900" textColor="primary.50" text="Login" />
         </Flex>
       </Flex>
       <SearchBar placeholder="search for a product" />

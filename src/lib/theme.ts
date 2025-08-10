@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
+  overlay: {
+    500: "#0000007F",
+    600: "#00000099",
+  },
   brand: {
     50: "#fff7ed",
     100: "#ffedd5",
@@ -8,10 +12,10 @@ const colors = {
     300: "#fdba74",
     400: "#fb923c",
     500: "#f57c1f", // main orange {support and contrast}
-    600: "#2d3136", // dark gray {buttons, bgs}
-    700: "#ea580c",
-    800: "#c2410c",
-    900: "#9a3412",
+    600: "#ea580c",
+    700: "#c2410c",
+    800: "#9a3412",
+    900: "#2d3136", // dark gray {buttons, bgs}
   },
   primary: {
     50: "#f5f6fa",

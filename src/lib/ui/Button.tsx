@@ -6,11 +6,27 @@ interface BtnProps {
   textColor?: string;
   width?: string | number;
   height?: string | number;
+  hoverBg?: string;
+  leftIcon?: React.ReactNode;
 }
 
-const Btn = ({ text, bgColor, textColor, width, height }: BtnProps) => {
+const Btn = ({
+  text,
+  bgColor,
+  textColor,
+  width,
+  height,
+  hoverBg,
+}: BtnProps) => {
   return (
-    <Button bg={bgColor} textColor={textColor} width={width} height={height}>
+    <Button
+      bg={bgColor}
+      textColor={textColor}
+      width={width}
+      height={height}
+      borderRadius={8}
+      _hover={{ bg: hoverBg }}
+    >
       {text}
     </Button>
   );
