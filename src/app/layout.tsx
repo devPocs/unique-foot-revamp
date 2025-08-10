@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Providers from "./providers";
 import Nav from "@/lib/components/Nav";
 import Footer from "@/lib/components/Footer";
+import CallOutBanner from "@/lib/components/CallOutBanner";
 
 import { Container } from "@chakra-ui/react";
 
@@ -36,6 +37,7 @@ export default function RootLayout({
           >
             <Nav />
             {children}
+            <CallOutBanner />
             <Footer />
           </Container>
         </Providers>
